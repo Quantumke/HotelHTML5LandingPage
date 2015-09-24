@@ -39,7 +39,7 @@ body.overlay-visible {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding: 16px;
+  padding: 0px;
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -71,6 +71,7 @@ body.overlay-visible {
   background-color: transparent;
   cursor: pointer;
   text-indent: -99999px;
+    border: 0px;
 }
 #overlayContainer #overlayFrame #overlayClose[disabled] {
   cursor: default;
