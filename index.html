@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+	<!---- META CONTENT---------------------------------------------->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Four Boxes Slideshow | Demo 1</title>
-		<meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
+<meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
 		<meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
@@ -13,32 +14,57 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/overlay.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="js/modernizr.custom.js"></script>
 	</head>
+	<!-------------------------------------END-------------------------------------------------------->
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
-				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/InlineAnchorStyles/"><span>Previous Demo</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19242"><span>Back to the Codrops Article</span></a></span>
+<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19242"><span>Book a room</span></a></span>
 			</div>
+			
+			<!------------------------------SLIDER--------------------------------------------------------------->
 			<div id="boxgallery" class="boxgallery" data-effect="effect-1">
 				<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
 				<div class="panel"><img src="img/2.jpg" alt="Image 2"/></div>
 				<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
 				<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>
 			</div>
+			
 			<header class="codrops-header">
-				<h1>Four Boxes Slideshow <span>Recreating the background image slideshow seen on <a href="http://www.atelier-serge-thoraval.com/en/">Atelier Serge Thoroval's website</a></span></h1>
+				<h1>PRIDE INN<span style="text-transform:uppercase;">Within your reach within your means <a href="#"> </a></span></h1>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Serge Thoroval</a>
-					<a href="index2.html">Lateral</a>
-					<a href="index3.html">Fall</a>
+				 <div id="container" data-overlay-page-wrap>
+			<a id="overlayTrigger1" class="current-demo" href="#myOverlay1" data-overlay-trigger>Book a room</a>
+			
+		
+					<a class="current-demo" href="#">About</a>
+					</div>
+                    
 				</nav>
 			</header>
 		</div><!-- /container -->
+		<!----------------------------------------------SLIDER----------------------------------------------------->
+		<div style="display:none;">
+			<!-- Each overlay needs an id. The aria-labelledby is not required but is best practice -->
+			<div id="myOverlay1" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+				<h1 id="myOverlay1Heading">TEST CONTENT 1</h1>
+                <input type="text"/>
+			</div>
+			<div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+				<h1 id="myOverlay2Heading">TEST CONTENT 2</h1>
+			</div>
+			<div id="myOverlay3" aria-labelledby="myOverlay3Heading" data-overlay-container-class="slide-right">
+				<h1 id="myOverlay3Heading">TEST CONTENT 3</h1>
+			</div>
+		</div>
+		
 		<script src="js/classie.js"></script>
 		<script src="js/boxesFx.js"></script>
+		<script src="js/Overlay.js"></script>
 		<script>
 			new BoxesFx( document.getElementById( 'boxgallery' ) );
 		</script>
