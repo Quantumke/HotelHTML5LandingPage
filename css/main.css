@@ -1,4 +1,8 @@
- #myOverlay1 {
+.logo{
+   margin-top: 15px;
+}
+
+#myOverlay1 {
 width:600px;
 height:400px;
      
@@ -34,7 +38,7 @@ height:400px;
 .overlay-top-body{
 height: 300px;
     width: 100%;
-    background: red;
+   background: #332F2D; 
 }
 .overlay-top-foot{
 height: 54px;

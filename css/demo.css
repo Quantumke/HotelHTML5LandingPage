@@ -116,7 +116,7 @@ section {
 
 /* Demo Buttons Style */
 .codrops-demos {
-	padding-top: 2em;
+	padding-top: -2em;
 	font-size: 0.8em;
 }
 

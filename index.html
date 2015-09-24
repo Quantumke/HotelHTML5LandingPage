@@ -16,6 +16,11 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/overlay.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" href="css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+</head>
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<!-------------------------------------END-------------------------------------------------------->
@@ -23,15 +28,16 @@
 		<div class="container">
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
-<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19242"><span>Book a room</span></a></span>
+<img class="logo" alt="logo" src="img/logo.png" height="90" width="100">
 			</div>
 			
 			<!------------------------------SLIDER--------------------------------------------------------------->
 			<div id="boxgallery" class="boxgallery" data-effect="effect-1">
-				<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
+				
 				<div class="panel"><img src="img/2.jpg" alt="Image 2"/></div>
 				<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
 				<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>
+				<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
 			</div>
 			
 			<header class="codrops-header">
@@ -55,7 +61,15 @@
             <p class="overlay-site-name">pride inn  <span style="float:right">ONLINE BOOKING</span></p>
              </div>
               <div class="overlay-top-body">
-                  
+                <span style="margin-top:30px;">
+                      
+        <input style="color:#C0403F;width:50%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:50%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:50%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:50%; margin-right:50%" id="Email"  placeholder="Enter Your Name "type="email" length="20">
+                <button class="btn" style="background:#C0403F;">Book</button>
+                </span>
+                
               </div>
                 <div class="overlay-top-foot">
                   
@@ -65,10 +79,53 @@
 			</div>
 	
 		</div>
-		
+		<script>
+        $('.datepicker1').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+    min: true,
+    onOpen: function () {
+      this.clear();
+    },
+    onSet: function () {
+      var x,y,year,date,month;
+      x = $('.datepicker1').pickadate().val().toString();
+      y = x.split(/[ ,]+/);
+      date = y[0];
+      month = y[1];
+      year = y[2];
+      console.log(y[0]+" "+ y[1]+ " "+ y[2]);
+      if(date && month && year){
+        this.close();
+      }
+    }
+  });
+               $('.datepicker2').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+    min: true,
+    onOpen: function () {
+      this.clear();
+    },
+    onSet: function () {
+      var x,y,year,date,month;
+      x = $('.datepicker2').pickadate().val().toString();
+      y = x.split(/[ ,]+/);
+      date = y[0];
+      month = y[1];
+      year = y[2];
+      console.log(y[0]+" "+ y[1]+ " "+ y[2]);
+      if(date && month && year){
+        this.close();
+      }
+    }
+  });
+        </script>
 		<script src="js/classie.js"></script>
 		<script src="js/boxesFx.js"></script>
 		<script src="js/Overlay.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/materialize.js"></script>
 		<script>
 			new BoxesFx( document.getElementById( 'boxgallery' ) );
 		</script>
