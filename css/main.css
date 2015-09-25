@@ -9,6 +9,16 @@ height:400px;
      background-size: cover;
      margin-top: -21px;
  }
+
+
+#myOverlay5 {
+width:600px;
+height:400px;
+     
+     background-size: cover;
+     margin-top: -21px;
+ }
+
  #myOverlay2 {
     width:50%;
     height:0%;
@@ -72,6 +82,7 @@ height: 100px;
 }
 .gallery-resort {
     height: 100px;
+    float: left;
     
 }
 .compare-Hotels{
