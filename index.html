@@ -46,8 +46,8 @@
 				 <div id="container" data-overlay-page-wrap>
 			<a id="overlayTrigger1" class="current-demo" href="#myOverlay1" data-overlay-trigger>Book a room</a>
 			
-		
-					<a class="current-demo" href="#">About</a>
+<a id="overlayTrigger2" class="current-demo" href="#myOverlay2" data-overlay-trigger>About Us</a>
+					
 					</div>
                     
 				</nav>
@@ -62,23 +62,38 @@
              </div>
               <div class="overlay-top-body">
                 <span style="margin-top:30px;">
-                      
+   
         <input style="color:#C0403F;width:50%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
                  <input style="color:#C0403F;width:50%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
             <input style="color:#C0403F;width:50%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
-                <input style="color:#C0403F;width:50%; margin-right:50%" id="Email"  placeholder="Enter Your Name "type="email" length="20">
+                <input style="color:#C0403F;width:50%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
                 <button class="btn" style="background:#C0403F;">Book</button>
                 </span>
                 
               </div>
-                <div class="overlay-top-foot">
-                  
-              </div>
-              
-              
+            <div class="overlay-top-foot"> 
+            <span>Terms and conditions apply</span>   
+            </div>
+			</div>
+	
+<div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+    <div class="overlay-top-hdr"> 
+                 <span>WELCOME TO PRIDE IN RESTURANTS</span>
+                   </div>
+                  <div class="overlay-top-body-2">
+
+                      <video class="video" src="img/prideinn.mp4"  height="90%" width="100%"></video></div>
+                      <div class="overlay-top-foot"> 
+            
+            </div>
 			</div>
 	
 		</div>
+		<script>
+        $('.video').click(function(){this.paused?this.play():this.pause();});
+        </script>
 		<script>
         $('.datepicker1').pickadate({
     selectMonths: true, // Creates a dropdown to control month
