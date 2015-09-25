@@ -174,5 +174,15 @@ width: 110%;
     background: #C0403F;
     padding-top: 10px;
     text-align: center;
+    
    
+}
+.book-btn:hover{
+    cursor: pointer;
+}
+.cst-links{
+    color: white;
+}
+.cst-links:hover{
+    text-decoration: underline 2px solid aqua;
 }
