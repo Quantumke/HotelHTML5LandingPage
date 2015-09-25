@@ -157,7 +157,16 @@ ul.hotels {
 }
 .product-listing {
 height: 300px;
-    background: red;
+  
     float: left;
     
+}
+
+.product-listing:hover{
+    border: 0.5px solid red;
+}
+.book-btn{
+width: 100px;
+    height: 50px;
+    background: red;
 }
