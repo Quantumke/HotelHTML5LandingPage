@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-	<!---- META CONTENT---------------------------------------------->
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Pride In</title>
-<meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
-		<meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/overlay.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/materialize.css">
-		<link rel="stylesheet" href="css/materialize.min.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+<head>
+    <!---- META CONTENT---------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pride In</title>
+    <meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
+    <meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 </head>
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<!-------------------------------------END-------------------------------------------------------->
-	<body>
-		<div class="container">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-<img class="logo" alt="logo" src="img/logo.png" height="90" width="100">
-			</div>
-			
-			<!------------------------------SLIDER--------------------------------------------------------------->
-			<div id="boxgallery" class="boxgallery" data-effect="effect-1">
-				
-				<div class="panel"><img src="img/2.jpg" alt="Image 2"/></div>
-				<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
-				<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>
-				<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
-			</div>
-			
-			<header class="codrops-header">
-				<h1>PRIDE INN<span style="text-transform:uppercase;">Within your reach within your means <a href="#"> </a></span></h1>
-				<nav class="codrops-demos">
-				 <div id="container" data-overlay-page-wrap>
-			<a id="overlayTrigger1" class="current-demo" href="#myOverlay1" data-overlay-trigger>Book a room</a>
-			
-<a id="overlayTrigger2" class="current-demo" href="#myOverlay2" data-overlay-trigger>About Us</a>
-					
-					</div>
-                    
-				</nav>
-			</header>
-		</div><!-- /container -->
-		<!----------------------------------------------POPUP----------------------------------------------------->
-		<div style="display:none;">
-		
-			<div id="myOverlay1" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
-				<div class="overlay-top-hdr">
-            <p class="overlay-site-name">pride inn  <span style="float:right">ONLINE BOOKING</span></p>
-             </div>
-              <div class="overlay-top-body">
+<script src="js/modernizr.custom.js"></script>
+</head>
+<!-------------------------------------END-------------------------------------------------------->
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+            <img class="logo" alt="logo" src="img/logo.png" height="90" width="100">
+        </div>
+
+        <!------------------------------SLIDER--------------------------------------------------------------->
+        <div id="boxgallery" class="boxgallery" data-effect="effect-1">
+
+            <div class="panel"><img src="img/2.jpg" alt="Image 2" /></div>
+            <div class="panel"><img src="img/3.jpg" alt="Image 3" /></div>
+            <div class="panel"><img src="img/4.jpg" alt="Image 4" /></div>
+            <div class="panel"><img src="img/1.jpg" alt="Image 1" /></div>
+        </div>
+
+        <header class="codrops-header">
+            <h1>PRIDE INN<span style="text-transform:uppercase;">Within your reach within your means <a href="#"> </a></span></h1>
+            <nav class="codrops-demos">
+                <div id="container" data-overlay-page-wrap>
+                    <a id="overlayTrigger1" class="current-demo" href="#myOverlay1" data-overlay-trigger>Book a room</a>
+
+                    <a id="overlayTrigger2" class="current-demo" href="#myOverlay2" data-overlay-trigger>About Us</a>
+
+                </div>
+
+            </nav>
+        </header>
+    </div>
+    <!-- /container -->
+    <!----------------------------------------------POPUP----------------------------------------------------->
+    <div style="display:none;">
+
+        <div id="myOverlay1" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <div class="overlay-top-body">
                 <span style="margin-top:30px;">
    
         <input style="color:#C0403F;width:50%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
@@ -71,78 +74,82 @@
                     
                 <button class="btn" style="background:#C0403F;">Book</button>
                 </span>
-                
-              </div>
-            <div class="overlay-top-foot"> 
-            <span>Terms and conditions apply</span>   
-            </div>
-			</div>
-	
-<div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
-    <div class="overlay-top-hdr"> 
-                 <span>WELCOME TO PRIDE IN RESTURANTS</span>
-                   </div>
-                  <div class="overlay-top-body-2">
 
-                      <video class="video" src="img/prideinn.mp4"  height="90%" width="100%"></video></div>
-                      <div class="overlay-top-foot"> 
-            
             </div>
-			</div>
-	
-		</div>
-		<script>
-        $('.video').click(function(){this.paused?this.play():this.pause();});
-        </script>
-		<script>
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>
+
+        <div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+            <div class="overlay-top-hdr">
+                <span>WELCOME TO PRIDE IN RESTURANTS</span>
+            </div>
+            <div class="overlay-top-body-2">
+
+                <video class="video" src="img/prideinn.mp4" height="90%" width="100%"></video>
+            </div>
+            <div class="overlay-top-foot">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $('.video').click(function () {
+            this.paused ? this.play() : this.pause();
+        });
+    </script>
+    <script>
         $('.datepicker1').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year
-    min: true,
-    onOpen: function () {
-      this.clear();
-    },
-    onSet: function () {
-      var x,y,year,date,month;
-      x = $('.datepicker1').pickadate().val().toString();
-      y = x.split(/[ ,]+/);
-      date = y[0];
-      month = y[1];
-      year = y[2];
-      console.log(y[0]+" "+ y[1]+ " "+ y[2]);
-      if(date && month && year){
-        this.close();
-      }
-    }
-  });
-               $('.datepicker2').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year
-    min: true,
-    onOpen: function () {
-      this.clear();
-    },
-    onSet: function () {
-      var x,y,year,date,month;
-      x = $('.datepicker2').pickadate().val().toString();
-      y = x.split(/[ ,]+/);
-      date = y[0];
-      month = y[1];
-      year = y[2];
-      console.log(y[0]+" "+ y[1]+ " "+ y[2]);
-      if(date && month && year){
-        this.close();
-      }
-    }
-  });
-        </script>
-		<script src="js/classie.js"></script>
-		<script src="js/boxesFx.js"></script>
-		<script src="js/Overlay.js"></script>
-		<script src="js/materialize.min.js"></script>
-		<script src="js/materialize.js"></script>
-		<script>
-			new BoxesFx( document.getElementById( 'boxgallery' ) );
-		</script>
-	</body>
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year
+            min: true,
+            onOpen: function () {
+                this.clear();
+            },
+            onSet: function () {
+                var x, y, year, date, month;
+                x = $('.datepicker1').pickadate().val().toString();
+                y = x.split(/[ ,]+/);
+                date = y[0];
+                month = y[1];
+                year = y[2];
+                console.log(y[0] + " " + y[1] + " " + y[2]);
+                if (date && month && year) {
+                    this.close();
+                }
+            }
+        });
+        $('.datepicker2').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year
+            min: true,
+            onOpen: function () {
+                this.clear();
+            },
+            onSet: function () {
+                var x, y, year, date, month;
+                x = $('.datepicker2').pickadate().val().toString();
+                y = x.split(/[ ,]+/);
+                date = y[0];
+                month = y[1];
+                year = y[2];
+                console.log(y[0] + " " + y[1] + " " + y[2]);
+                if (date && month && year) {
+                    this.close();
+                }
+            }
+        });
+    </script>
+    <script src="js/classie.js"></script>
+    <script src="js/boxesFx.js"></script>
+    <script src="js/Overlay.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        new BoxesFx(document.getElementById('boxgallery'));
+    </script>
+</body>
+
 </html>
