@@ -42,8 +42,20 @@ height:400px;
 }
 .overlay-top-body{
 height: 300px;
-    width: 100%;
-   background: #332F2D; 
+   width: 34%;
+    color: #332F2D;
+    
+  
+}
+.overlay-right{
+ background: #332F2D; 
+    height: 300px;
+    width: 66%;
+    float: right;
+   
+}
+.body-popup-cust{
+     width: 100%;
 }
 .overlay-top-foot{
 height: 54px;
