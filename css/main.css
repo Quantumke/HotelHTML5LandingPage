@@ -1,3 +1,5 @@
+a{color: white;}
+
 .logo{
    margin-top: 15px;
 }
@@ -167,8 +169,10 @@ height: 300px;
 }
 .book-btn{
 margin-left: -10px;
-width: 150px;
+width: 110%;
     height: 50px;
     background: #C0403F;
+    padding-top: 10px;
+    text-align: center;
    
 }
