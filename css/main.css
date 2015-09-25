@@ -155,3 +155,9 @@ height: 250px;
 ul.hotels {
   list-style-type:square;
 }
+.product-listing {
+height: 300px;
+    background: red;
+    float: left;
+    
+}
