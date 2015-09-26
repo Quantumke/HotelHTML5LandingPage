@@ -1,18 +1,731 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
 <head>
-    <title>WESTLANDS BRANCH</title>
-    <link rel="stylesheet" href="css/materialize.css">
+    <!---- META CONTENT---------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pride Inn</title>
+    <meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
+    <meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 </head>
+<script src="js/modernizr.custom.js"></script>
+</head>
+<!-------------------------------------END-------------------------------------------------------->
 
 <body>
-<div class="header-ind">
-    
-</div>
-<script src="js/materialize.js"></script>
-<script src="js/materialize.min.js"></script>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+            <img class="logo" alt="logo" src="img/logo.png" height="90" width="100">
+        </div>
+
+        <!------------------------------SLIDER--------------------------------------------------------------->
+        <div id="boxgallery" class="boxgallery" data-effect="effect-1">
+
+            <div class="panel"><img src="img/2.jpg" alt="Image 2" /></div>
+            <div class="panel"><img src="img/3.jpg" alt="Image 3" /></div>
+            <div class="panel"><img src="img/4.jpg" alt="Image 4" /></div>
+            <div class="panel"><img src="img/1.jpg" alt="Image 1" /></div>
+        </div>
+
+        <header class="codrops-header">
+            <h1>PRIDE INN<span style="text-transform:uppercase;">Within your reach within your means <a href="#"> </a></span></h1>
+            <nav class="codrops-demos">
+                <div id="container" data-overlay-page-wrap>
+                  
+                    <a id="overlayTrigger4" class="current-demo" href="#myOverlay4" data-overlay-trigger>Compare Prices </a>
+
+                    <a id="overlayTrigger2" class="current-demo" href="#myOverlay2" data-overlay-trigger>About Us</a>
+                   
+                </div>
+
+            </nav>
+        </header>
+    </div>
+    <!-- /container -->
+    <div class="cotainer">
+    <!----------------------------------------------POPUP----------------------------------------------------->
+    <div style="display:none;">
+
+        <div id="myOverlay1" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/logo.png" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>
+<!---------------------------------------------------------POPUP WESTLANDS--------------------------------------------------------->        
+        
+        <div id="myOverlay5" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/westlands.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>
+          
+<!---------------------------------------------------------POPUP RAPHTA--------------------------------------------------------->        
+        
+        <div id="myOverlay6" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/raphta.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+
+     <!---------------------------------------------------------POPUP NYALI--------------------------------------------------------->        
+        
+        <div id="myOverlay7" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/nyali.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+
+              
+     <!---------------------------------------------------------POPUP MOMBASA--------------------------------------------------------->        
+        
+        <div id="myOverlay8" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/mombasa.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+
+         <!---------------------------------------------------------POPUP LANTANA--------------------------------------------------------->        
+        
+        <div id="myOverlay9" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/lantana.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+     
+              
+      <!---------------------------------------------------------POPUP DIANI--------------------------------------------------------->        
+        
+        <div id="myOverlay10" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/diani.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+        
+       <!---------------------------------------------------------POPUP EX--------------------------------------------------------->        
+        
+        <div id="myOverlay11" aria-labelledby="myOverlay1Heading" data-overlay-container-class="slide-up">
+         
+           <!---------------------Head-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <p class="overlay-site-name">pride inn <span style="float:right">ONLINE BOOKING</span></p>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="body-popup-cust">
+            <div class="overlay-right">
+        
+                <span style="margin-top:30px;">
+   
+        <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="from" placeholder="pick a starting Date"  class="datepicker1">
+                 <input style="color:#C0403F;width:100%; margin-right:50%" type="date" id="to" placeholder="pick a Ending Date"  class="datepicker2">
+            <input style="color:#C0403F;width:100%; margin-right:50%" id="name"  placeholder="Enter Your Name "type="text" length="20">
+                <input style="color:#C0403F;width:100%; margin-right:50%" id="Email"  placeholder="Enter Your Email "type="email" length="20">
+                   <input type="radio">
+                    
+                <button class="btn" style="background:#C0403F; text-align:center">Book</button>
+                </span>
+                
+
+            </div>
+                <div class="overlay-top-body">
+                <img src="img/raphta.jpg" height="100px" width="200px">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+               
+            </div>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+                <span>Terms and conditions apply</span>
+            </div>
+        </div>    
+        
+         <!--------------------------------------END------------------------------------------------------------------>           
+       
+              
+              
+<!-------------------------------------------------POPUP ABOUT------------------------------------------------------------>
+       
+        <div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+           <!---------------------Top-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <span>WELCOME TO PRIDE IN RESTURANTS</span>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+            <div class="overlay-top-body-2">
+
+                <video class="video" src="img/prideinn.mp4" height="90%" width="100%"></video>
+            </div>
+            <!---------------------Foot-------------------------------------------------->
+            <div class="overlay-top-foot">
+
+            </div>
+              </div>
+ <!------------------------------------------------------------POPUP COMPARE--------------------------------------------->
+            <div id="myOverlay4" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down">
+             <!---------------------Top-------------------------------------------------->
+            <div class="overlay-top-hdr">
+                <span>WELCOME TO PRIDE IN RESTURANTS</span>
+            </div>
+            <!---------------------Body-------------------------------------------------->
+             <div class="overlay-top-comp">
+			<!---------------------westlands-------------------------------------------------->
+			<div class="compare-Hotels" style="color:#967212">
+           <span >Westlands</span>
+           <span>
+               <ul class="hotels">
+               <li>.Audio Visual Equipement</li>
+                <li>.Business Center Services</li>
+                <li>.Hall Hire Only</li>
+                <li>.Hourly hall rental</li>
+                </ul>
+           </span>
+           <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+                <li>.28 Deluxe rooms</li>
+
+                </ul>
+           </span>
+			</div>
+			<!---------------------Lantana-------------------------------------------------->
+				<div class="compare-Hotels" style="color:#D71A21">
+            <span>Lantana</span>
+            <span>
+               <ul class="hotels">
+               <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                <li>.Hourly hall rental</li>
+                </ul>
+            </span>
+            <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+                <li>.Stardand rooms-5</li>
+                 <li>.1 bedroom (Balcony-39)</li>
+                  <li>.1 bedroom ( N0 Balcony-39)</li>
+                    <li>.2 Bedroomd -4</li>
+                </ul>
+            </span>
+			</div>
+			<!---------------------Raphta-------------------------------------------------->
+			
+				<div class="compare-Hotels" style="color:green">
+            <span>Raphta</span> 
+             <span>
+               <ul class="hotels">
+               <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                </ul>
+            </span>
+            <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+               <li>.Studio rooms-6</li>
+                <li>.Stardand rooms-16</li>
+                 <li>.1 bedroom 4</li>
+                  <li>.2 bedroom 3</li>
+                    <li>.3 Bedroomd -3</li>
+                </ul>
+            </span>
+            
+			</div>
+			<!---------------------Mombasa-------------------------------------------------->
+				<div class="compare-Hotels" style="color:#340100">
+            <span>Mombasa</span> 
+              <span>
+               <ul class="hotels">
+               <li>.24 hour Taxi</li>
+                <li>.Shuttle Services</li>
+                <li>.Personal chef</li>
+                </ul>
+            </span>
+            <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+               <li>.Superioir rooms</li>
+                <li>.Stardand rooms-16</li>
+                 <li>.Deluxe Rooms</li>
+                  <li>.Smoking Rooms</li>
+                    <li>. Non Smoking rooms</li>
+                </ul>
+            </span>
+			</div>
+			<!---------------------Nyali------------------------------------------------->
+			<div class="compare-Hotels" style="color:#088091">
+            <span>Nyali</span>
+                 <span>
+               <ul class="hotels">
+               <li>.24 hour Taxi</li>
+                <li>.Shuttle Services</li>
+                <li>.Personal chef</li>
+                </ul>
+            </span>
+            <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+               <li>.Superioir rooms</li>
+                <li>.Stardand rooms-16</li>
+                 <li>.Deluxe Rooms</li>
+                  <li>.Smoking Rooms</li>
+                    <li>. Non Smoking rooms</li>
+                </ul>
+            </span>
+			</div>
+			<!---------------------Diani------------------------------------------------>
+			<div class="compare-Hotels" style="color:#1385C3">
+           <span>Diani</span>  
+                 <span>
+               <ul class="hotels">
+               <li>.Bereau De change</li>
+                <li>.Laundry Services</li>
+                <li>.Baby Sitting</li>
+                </ul>
+            </span>
+            <span>
+                <ul class="hotels">
+               <li>.ACCOMODATION</li>
+               <li>.Superioir rooms</li>
+                 <li>.Deluxe Rooms</li>
+                  <li>.Smoking Rooms</li>
+                   
+                </ul>
+            </span>
+			</div>
+			<!---------------------ROyal Kitchen------------------------------------------------>
+			<div class="compare-Hotels" style="color:#EFC34C">
+           <span>Royal Kitchen</span> 
+                <span>
+               <ul class="hotels">
+               <li>. Outside Catering</li>
+                <li>. Wedding parties</li>
+                <li>.   Birthday parties</li>
+                <li>.    Cocktail Parties</li>
+                </ul>   
+            </span>
+           
+			</div>
+			<!---------------------End------------------------------------------------>
+        </div>
+			            <div class="overlay-top-foot">
+
+            </div>
+			</div>
+      
+       <!-------------------------------------------------------------END---------------------------------------------------->
+      
+
+    </div>
+    <div class="body-sec-full">
+        <div class="container">
+            <div class="row">'
+            <div class="gallery-resort col s12">
+               <div class="product-listing col s3" style=" background: url(img/west.jpg); background-size: cover; background-repeat: no-repeat;">
+ 
+                 <div class="book-btn">
+                    <span><a class="cst-links"  href="#">WESTLANDS</a></span>
+                      <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
+                 </div>
+                  
+              </a>
+               </div>
+                 <div class="product-listing col s3" style=" background: url(img/lant.jpg); background-size: cover; background-repeat: no-repeat;">
+                  <div class="book-btn">
+                    <span><a class="cst-links" href="#">LANTANA</a></span>
+                 </div>
+                 <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
+               </div>
+                 <div class="product-listing col s3" style=" background: url(img/coast.jpg); background-size: cover; background-repeat: no-repeat;">
+                   <div class="book-btn">
+                    <span><a class="cst-links" href="#">MOMBASA</a></span>
+                 </div>
+                   <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
+                 
+                 
+               </div>
+            <div class="product-listing col s3" style=" background: url(img/ddiani.jpg); background-size: cover; background-repeat: no-repeat;">
+             <div class="book-btn">
+                    <span><a class="cst-links" href="#">DIANI</a></span>
+                 </div>
+                   <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
+               </div>  
+          <!-----------------------------------------------------------------------------END----------------------------------->     
+            <div class="product-listing col s4" style=" background: url(img/nyal.jpg); background-size: cover; background-repeat: no-repeat;">
+               <div class="book-btn">
+                    <span><a class="cst-links" href="#">NYALI</a></span>
+                 </div>
+                  <div class="text-b"> <div class="btn-choose">BOOK</div>  </div> 
+               </div>
+                 <div class="product-listing col s4" style=" background: url(img/rapht.jpg); background-size: cover; background-repeat: no-repeat;">
+                 <div class="book-btn">
+                    <span><a class="cst-links" href="#">RAPHTA</a></span>
+                 </div>
+                  <div class="text-b"> <div class="btn-choose">BOOK</div>  </div> 
+               </div>
+                 <div class="product-listing col s4" style=" background: url(img/royal.jpg); background-size: cover; background-repeat: no-repeat;">
+                     <div class="book-btn">
+                    <span><a class="cst-links" href="#">ROYAL</a></span>
+                 </div>
+                  <div class="text-b"> <div class="btn-choose">BOOK</div>  </div> 
+               </div>         
+                           
+                                         
+        </div>
+        
+        </div>
+        
+    </div></div>
+       <div class="footer-end">
+       <div class="container">
+           <div class="row">
+               <div class="copyright">
+                   &copy;2015 QuantumKe
+               </div>
+           </div>
+       </div>
+        
+    </div>
+    <script>
+        $('.video').click(function () {
+            this.paused ? this.play() : this.pause();
+        });
+    </script>
+    <script>
+        $('.datepicker1').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year
+            min: true,
+            onOpen: function () {
+                this.clear();
+            },
+            onSet: function () {
+                var x, y, year, date, month;
+                x = $('.datepicker1').pickadate().val().toString();
+                y = x.split(/[ ,]+/);
+                date = y[0];
+                month = y[1];
+                year = y[2];
+                console.log(y[0] + " " + y[1] + " " + y[2]);
+                if (date && month && year) {
+                    this.close();
+                }
+            }
+        });
+        $('.datepicker2').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year
+            min: true,
+            onOpen: function () {
+                this.clear();
+            },
+            onSet: function () {
+                var x, y, year, date, month;
+                x = $('.datepicker2').pickadate().val().toString();
+                y = x.split(/[ ,]+/);
+                date = y[0];
+                month = y[1];
+                year = y[2];
+                console.log(y[0] + " " + y[1] + " " + y[2]);
+                if (date && month && year) {
+                    this.close();
+                }
+            }
+        });
+    </script>
+    <script src="js/classie.js"></script>
+    <script src="js/boxesFx.js"></script>
+    <script src="js/Overlay.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        new BoxesFx(document.getElementById('boxgallery'));
+    </script>
 </body>
 
 </html>
