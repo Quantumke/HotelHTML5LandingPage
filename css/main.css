@@ -145,7 +145,7 @@ height: 650px;
     border: 1px solid white;
     text-align: center;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 12px;
     
 }
 .overlay-top-comp{
@@ -246,7 +246,7 @@ background: url(../img/logo-west.jpg);
 }
 
 .mian-fn-min{
-    height: 400PX;
+    height: 300PX;
    
     width: 50%;
     margin-top: 20px;
