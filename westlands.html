@@ -19,10 +19,22 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
+    	<link rel="stylesheet" href="css/tinycarousel.css" type="text/css" media="screen"/>
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 </head>
 <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- build:js jquery.tinycarousel.js -->
+	<script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+    <!-- /build -->
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider1').tinycarousel();
+		});
+	</script>
 </head>
 <!-------------------------------------END-------------------------------------------------------->
 
@@ -631,6 +643,21 @@
                   <div class="mian-fn-min col s3">
                   
                    
+
+	<div id="slider1">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+			<ul class="overview">
+				<li><img src="images/picture6.jpg" /></li>
+				<li><img src="images/picture5.jpg" /></li>
+				<li><img src="images/picture4.jpg" /></li>
+				<li><img src="images/picture3.jpg" /></li>
+				<li><img src="images/picture2.jpg" /></li>
+				<li><img src="images/picture1.jpg" /></li>
+			</ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+	</div>
                </div>
            </div>
        </div>
@@ -703,6 +730,8 @@
        </div>
         
     </div>
+  
+
     <script>
         $('.video').click(function () {
             this.paused ? this.play() : this.pause();
