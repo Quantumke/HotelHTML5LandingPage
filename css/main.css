@@ -252,7 +252,9 @@ background: url(../img/logo-west.jpg);
     height: 200px;
 }
 .mian-fn-min{
-    height: 400PX;
+    height: 500PX;
     background: red;
-    width: 100%;
+    width: 50%;
+    margin-top: 20px;
+    float: left;
 }
