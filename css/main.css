@@ -231,7 +231,8 @@ width: 110%;
 .footer-end{
 height: 50px;
     background: #000;
-    width: 100%
+    width: 100%;
+        margin-top: 20px;
 }
 .copyright{
 color: white;
