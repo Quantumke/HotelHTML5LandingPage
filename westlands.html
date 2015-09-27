@@ -19,31 +19,25 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    	<link rel="stylesheet" href="css/tinycarousel.css" type="text/css" media="screen"/>
-
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 </head>
 <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- build:js jquery.tinycarousel.js -->
-	<script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
-    <!-- /build -->
-	<script type="text/javascript">
-		$(document).ready(function()
-		{
-			$('#slider1').tinycarousel();
-		});
-	</script>
 </head>
 <!-------------------------------------END-------------------------------------------------------->
 
 <body>
-    <div class="container">
-        <!-- Top Navigation -->
+    <div class="grp">
+       <div class="container">
+           <div class="row">
+                <!-- Top Navigation -->
         <div class="codrops-top clearfix">
             <img class="logo" alt="logo" src="img/logo.png" height="90" width="100">
         </div>
+               
+           </div>
+       </div>
+      
 
         <!------------------------------SLIDER--------------------------------------------------------------->
         <div id="boxgallery" class="boxgallery" data-effect="effect-1">
@@ -615,65 +609,18 @@
 
     </div>
     
-      <div class="main-fn">
-       <div class="container">
-           <div class="row>">
-               <div class="mian-fn-min col s3">
-                  <span style="color:#909090 ;border:0.5px solid black">
-                   <ul>
- <li>The suites offer a first class view of the city skyline.</li>
-
-<li>· 62 spacious two bedroom suites, ranging up to 88sqm</li>
-
-<li>·  The Exclusive Karim Services</li>
-
-<li>·  Suites featuring state - of - the art bathrooms</li>
-
-<li>·  Unique panoramic view of down town Abu Dhabi</li>
-
-<li>·  Complimentary wireless internet access</li>
-<br>
-  <span>
-    <a id="overlayTrigger5" class="current-demo" href="#myOverlay5" data-overlay-trigger>Book</a>
-               </span>
-</ul></span>
-               </div>
-                  <div class="mian-fn-min col s3">
-                  
-                   
-
-	<div id="slider1">
-		<a class="buttons prev" href="#">&#60;</a>
-		<div class="viewport">
-			<ul class="overview">
-				<li><img src="sliders/west.jpg" /></li>
-				<li><img src="sliders/west1.jpg" /></li>
-				<li><img src="sliders/west2.jpg" /></li>
-				<li><img src="sliders/west3.jpg" /></li>
-				<li><img src="sliders/west5.jpg" /></li>
-				
-			</ul>
-		</div>
-		<a class="buttons next" href="#">&#62;</a>
-	</div>
-               </div>
-           </div>
-       </div>
-        
-    </div>
+  
     
-    
-    
-    
-    
-    <!---------------------------------------------------------------------------SEG------------------------------------------------------->
+    <!------------------------------------------------------------------------BEGIN--------------------------------------------->
+   
+  <!---------------------------------------------------------------------------SEG------------------------------------------------------->
     <div class="body-sec-full">
         <div class="container">
             <div class="row">'
             <div class="gallery-resort col s12">
                <div class="covered product-listing col s3 "style=" background: url(img/west.jpg); background-size: cover; background-repeat: no-repeat;">
                   <div class="book-btn">
-                    <span><a class="cst-links" href="#">WESTLANDS</a></span>
+                    <span><a class="cst-links" href="westlands.html">WESTLANDS</a></span>
                  </div>
                  <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
                </div>
@@ -701,19 +648,19 @@
                    <div class="text"> <div class="btn-choose">BOOK</div>  </div> 
                </div>  
           <!-----------------------------------------------------------------------------END----------------------------------->     
-            <div class="product-listing col s4" style=" background: url(img/nyal.jpg); background-size: cover; background-repeat: no-repeat;">
+            <div class="product-listing col s4" style=" background: url(img/nyal.jpg); background-size: cover; background-repeat: no-repeat; margin-top:10px;">
                <div class="book-btn">
                     <span><a class="cst-links" href="#">NYALI</a></span>
                  </div>
                   <div class="text-b"> <div class="btn-choose">BOOK</div>  </div> 
                </div>
-                 <div class="product-listing col s4" style=" background: url(img/rapht.jpg); background-size: cover; background-repeat: no-repeat;">
+                 <div class="product-listing col s4" style="margin-top:10px; background: url(img/rapht.jpg); background-size: cover; background-repeat: no-repeat;">
                  <div class="book-btn">
                     <span><a class="cst-links" href="#">RAPHTA</a></span>
                  </div>
                   <div class="text-b"> <div class="btn-choose">BOOK</div>  </div> 
                </div>
-                 <div class="product-listing col s4" style=" background: url(img/royal.jpg); background-size: cover; background-repeat: no-repeat;">
+                 <div class="product-listing col s4" style="margin-top:10px; background: url(img/royal.jpg); background-size: cover; background-repeat: no-repeat;">
                      <div class="book-btn">
                     <span><a class="cst-links" href="#">ROYAL</a></span>
                  </div>
@@ -726,9 +673,22 @@
         </div>
         
     </div></div>
+           
       
-  
-
+      
+      
+      
+      <!----------------------------------------------_FOOTER SEC----------------------------------------------------->
+       <div class="footer-end">
+       <div class="container">
+           <div class="row">
+               <div class="copyright">
+                   &copy;2015 QuantumKe
+               </div>
+           </div>
+       </div>
+        
+    </div>
     <script>
         $('.video').click(function () {
             this.paused ? this.play() : this.pause();
