@@ -255,9 +255,9 @@ background: url(../img/logo-west.jpg);
 }
 .covered{
     cursor: not-allowed;
-  -webkit-filter: brightness(70%);
--moz-filter: brightness(70%);
--o-filter: brightness(70%);
--ms-filter: brightness(70%);
+  -webkit-filter: brightness(30%);
+-moz-filter: brightness(30%);
+-o-filter: brightness(30%);
+-ms-filter: brightness(30%);
     
 }
