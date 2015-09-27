@@ -248,8 +248,8 @@ background: url(../img/logo-west.jpg);
 
 .mian-fn-min{
     height: 300PX;
-   
-    width: 50%;
+  
+    overflow: hidden;
     margin-top: 20px;
     float: left;
 }
